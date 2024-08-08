@@ -1,0 +1,18 @@
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.logo__image {
+    max-width: 20px;
+}
+
+.logo__text {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 1.5em;
+}

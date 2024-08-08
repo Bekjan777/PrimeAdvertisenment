@@ -1,0 +1,66 @@
+.hamburger__checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    z-index: 4;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 32px;
+}
+
+.hamburger__lines {
+    height: 20px;
+    width: 32px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger__lines .hamburger__line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #ffffff;
+}
+
+.hamburger__lines .hamburger__line1 {
+    transform-origin: 0 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger__lines .hamburger__line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger__lines .hamburger__line3 {
+    transform-origin: 0 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger__checkbox:checked ~ .hamburger__lines .hamburger__line1 {
+    transform: rotate(35deg);
+}
+
+.hamburger__checkbox:checked ~ .hamburger__lines .hamburger__line2 {
+    transform: scaleY(0);
+}
+
+.hamburger__checkbox:checked ~ .hamburger__lines .hamburger__line3 {
+    transform: rotate(-35deg);
+}
+
+@media (max-width: 930px) {
+    .hamburger {
+        display: block;
+    }
+}

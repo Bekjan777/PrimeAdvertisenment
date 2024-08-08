@@ -1,0 +1,51 @@
+
+.rate
+  color: white
+  .button
+    width: 100px
+    text-align: center
+
+  .container
+    display: flex
+    justify-content: space-between
+    @media (max-width: 900px)
+      flex-direction: column
+      align-items: center
+      //padding: 33px
+      //background-color: #0c0f1e
+      //border-radius: 50px
+      //width: 500px
+
+  &__inner
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 100px 0
+    //gap: 30px
+    width: 50%
+    @media (max-width: 900px)
+      gap: 30px
+    p
+      font-size: 30px
+      line-height: 120%
+      @media (max-width: 800px)
+        font-size: 20px
+    &__quotation__mark
+      width: 98px
+      height: 72px
+      background-image: url("https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad2c_comma%20icon.png")
+
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 40%
+    @media (max-width: 1205px)
+      width: 60%
+
+    img
+      width: 100%

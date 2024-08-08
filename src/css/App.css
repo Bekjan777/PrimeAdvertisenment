@@ -1,0 +1,75 @@
+@import '../assets/fonts/fonts.css';
+
+:root {
+  --color-blue: rgb(56, 87, 246);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 43px;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  padding: 0 32px;
+}
+
+@media (min-width: 575.98px){
+  .container {
+    margin: auto;
+  }
+}
+
+@media (max-width: 575.98px){
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px){
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.font__template_1{
+  font-size: 18px;
+}
+
+.button{
+  /*position: relative;*/
+  display: inline-block;
+  padding: 0.7em 1.7em;
+  /*margin-top: px;*/
+  border-radius: 50px;
+  background-color: var(--color-blue);
+  box-shadow: rgba(255, 255, 255, 0.28) 4px 4px 18px 0 inset;
+  font-weight: 500;
+  border: none;
+  font-size: 1.3em;
+  /*z-index: 100;*/
+}

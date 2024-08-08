@@ -1,0 +1,127 @@
+.hww
+  width: 100%
+  position: relative
+  margin-top: 40px
+  margin-bottom: 40px
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 50px
+  &__con1
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 30px
+  &__con2
+    display: flex
+    flex-direction: row-reverse
+    align-items: center
+    gap: 30px
+  &__con3
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 30px
+  &__block
+    display: flex
+    flex-direction: column
+    padding: 2rem
+    border-radius: 20px
+    width: 400px
+    color: white
+    height: auto
+    gap: 20px
+    justify-content: space-between
+    @media (max-width: 1140px)
+      width: 300px
+      padding: 1.6rem
+    @media (max-width: 850px)
+      gap: 10px
+    @media (max-width: 670px)
+      box-shadow: 0px 0px 1px 1px var(--color-blue)
+      background: #0c0f1e
+      justify-content: center
+      align-items: center
+      text-align: center
+    @media (max-width: 400px)
+      padding: 1.4rem
+      border-radius: 0px
+      width: 100vw
+      box-sizing: border-box
+  &__united
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+    @media (max-width: 670px)
+      display: none
+  &__num
+    font-size: 3em
+    color: white
+  &__desc
+    font-size: 1.2em
+    color: #d9d9d9
+    line-height: 23px
+    @media (max-width: 1140px)
+      font-size: 1em
+  &__progress_bar
+    width: 3px
+    height: 280px
+    position: relative
+    background: white
+    border-radius: 10px
+    overflow: hidden
+  &__progress_bar-mini
+    height: 260px
+  &__line
+    width: 3px
+    background: var(--color-blue)
+    border-radius: 10px
+  &__button
+    display: inline-block
+    padding: 0.6em 1.5em
+    border-radius: 50px
+    background-color: var(--color-blue)
+    box-shadow: rgba(255, 255, 255, 0.28) 4px 4px 18px 0 inset
+    font-weight: 500
+    border: none
+    font-size: 1.3em
+    width: fit-content
+    @media (max-width: 670px)
+      width: fit-content
+  &__slhead
+    font-size: 3em
+    color: white
+    text-align: center
+    line-height: 1.4em
+    @media (max-width: 670px)
+      font-size: 2.7em
+  &__subtxt
+    font-size: 1.5em
+    color: rgba(255, 255, 255, 0.78)
+    text-align: center
+    @media (max-width: 670px)
+      font-size: 1.3em
+  &__headsl
+    font-size: 2.5em
+    padding: 2rem
+    color: white
+    text-align: center
+    line-height: 1.4em
+    width: 400px
+    @media (max-width: 1140px)
+      width: 300px
+      padding: 1.6rem
+      font-size: 2em
+    @media (max-width: 850px)
+      display: none
+      padding: 0
+      text-align: left
+      line-height: 1em
+    @media (max-width: 670px)
+      text-align: center
+  &__hide
+    display: none
+    @media (max-width: 850px)
+      display: inline

@@ -1,0 +1,101 @@
+.rate {
+  color: white;
+}
+.rate .button {
+  width: 100px;
+  text-align: center;
+}
+.rate .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: center;
+  gap: 30px;
+}
+.rate__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: center;
+    gap: 20px;
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .rate__inner {
+    gap: 30px;
+  }
+}
+.rate__inner p {
+  font-size: 1.5em;
+  line-height: 120%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 800px) {
+  .rate__inner p {
+    font-size: 20px;
+  }
+}
+.rate__inner__quotation__mark {
+  width: 98px;
+  height: 72px;
+  background-image: url("https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad2c_comma%20icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.rate__img {
+  width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.rate__img img {
+  width: 100%;
+  max-width: 500px;
+}
+.rate__head {
+  font-size: 1.5em;
+}
+@media (max-width: 900px) {
+  .swiper-nav-btns svg {
+    width: 30px;
+  }
+  .swiper-nav-btns {
+    gap: 10px !important;
+  }
+  .rate__img {
+    width: 100%;
+    justify-content: center;
+  }
+  .rate .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .rate__inner {
+    width: 100%;
+    padding: 0;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .rate p {
+    text-align: center;
+  }
+  .rate__inner__quotation__mark {
+    display: none;
+  }
+}

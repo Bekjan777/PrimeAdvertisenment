@@ -1,0 +1,78 @@
+.main
+  position: relative
+  top: 100px
+  opacity: 1
+  background-image:  linear-gradient(#151515 1px, transparent 1px), linear-gradient(to right, #151515 1px, #000000 1px)
+  background-image: url("../assets/wave.png")
+  background-size: cover
+  box-shadow: inset 0px -100px 55px -57px rgba(0,0,0,1)
+  //background-size: 30px 30px
+  width: 100%
+  padding: 100px 0 100px 0
+  background-position: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: #ffffff
+  &__content
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+  &__upper
+    font-size: 17px
+    padding: 10px 20px
+    width: 65%
+    display: inline
+    background-color: rgba(0, 111, 255, 0.16)
+    border: var(--color-blue) 1px solid
+    border-radius: 20px
+    text-align: center
+    color: #e8e8e8
+    backdrop-filter: blur(10px)
+    @media(max-width: 1400px)
+      font-size: 15px
+    @media(max-width: 1250px)
+      width: 80%
+    @media(max-width: 900px)
+      font-size: 13px
+
+
+  //width: 100vw
+  &__text
+    font-weight: 800
+    text-align: center
+    font-size: 56px
+    line-height: 1.2em
+    margin: 10px 0 30px
+    @media(max-width: 1400px)
+      font-size: 45px
+      line-height: 1.5em
+    @media(max-width: 1250px)
+      font-size: 35px
+    @media(max-width: 900px)
+      font-size: 30px
+    @media(max-width: 770px)
+      font-size: 25px
+    @media(max-width: 500px)
+      font-size: 20px
+
+  .blur
+    z-index: -1
+    width: 50%
+    height: 50%
+    position: absolute
+    top: 100px
+    left: 50%
+    background-color: rgba(0, 51, 255, 0.51)
+    transform: translateX(-50%)
+    filter: blur(250px)
+    @media(max-width: 1400px)
+      top: -100px
+    @media(max-width: 900px)
+      top: 0
+    @media (max-width: 770px)
+      top: 100px
+    @media(max-width: 500px)
+      top: 150px

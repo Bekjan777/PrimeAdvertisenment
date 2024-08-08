@@ -1,0 +1,31 @@
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.Rate__wrapper {
+  position: relative;
+  border: 1px solid red;
+  height: 700px;
+}
+
+.swiper {
+  position: relative;
+}
+
+.head__slogan {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  margin: 100px auto 50px;
+  max-width: 500px;
+}
+
+@media (max-width: 500px) {
+  .head__slogan {
+    color: white;
+    font-size: 2em;
+    max-width: 373px;
+  }
+}

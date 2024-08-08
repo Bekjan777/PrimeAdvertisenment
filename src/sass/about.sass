@@ -1,0 +1,53 @@
+.about_us
+  position: relative
+  top: -70px
+  color: #ffffff
+  .container
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 30px
+    flex-direction: row
+    @media (max-width: 900px)
+      flex-direction: column
+  &__mini
+    font-size: 17px
+    padding: 10px 30px
+    width: fit-content
+    background-color: rgba(0, 111, 255, 0.16)
+    border: var(--color-blue) 1px solid
+    border-radius: 20px
+    color: #e8e8e8
+    text-align: center
+    backdrop-filter: blur(10px)
+    @media(max-width: 1400px)
+      font-size: 15px
+    @media(max-width: 900px)
+      font-size: 13px
+      align-self: center
+  &__pict
+    width: 500px
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 300px
+    @media (max-width: 900px)
+      width: 50%
+  &__inner
+    width: 50%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    gap: 20px
+    @media (max-width: 900px)
+      width: 80%
+    &__description
+      line-height: 155%
+      color: #b3b3c7
+      letter-spacing: 1px
+      @media (max-width: 900px)
+        text-align: center
+    &__header
+      font-size: 43px
+      @media (max-width: 900px)
+        text-align: center
