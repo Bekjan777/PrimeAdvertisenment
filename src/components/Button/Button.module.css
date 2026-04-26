@@ -1,0 +1,12 @@
+.button {
+  display: inline-block;
+  padding: 0.7em 1.7em;
+  border-radius: 50px;
+  background-color: var(--color-primary);
+  box-shadow: rgba(255, 255, 255, 0.28) 4px 4px 18px 0 inset;
+  font-weight: 500;
+  border: none;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+}

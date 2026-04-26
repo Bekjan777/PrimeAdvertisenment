@@ -1,0 +1,50 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 130px 0;
+  font-family: 'DM Sans', sans-serif;
+  gap: 30px;
+  top: -50px;
+  z-index: -1;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  min-width: 200px;
+}
+
+.value {
+  font-size: 4.5em;
+}
+
+.number {
+  background: linear-gradient(135deg, var(--color-primary), #93a4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.percent {
+  font-size: 0.5em;
+  background: linear-gradient(135deg, var(--color-primary), #93a4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: var(--color-text-muted);
+  max-width: 250px;
+  line-height: 1.4;
+}

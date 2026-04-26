@@ -1,15 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './css/reset.css'
-import AOS from "aos";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import App from './App';
+import './styles/reset.css';
 
-AOS.init({
-    duration: 1000
-})
+AOS.init({ duration: 1000 });
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-)
+);

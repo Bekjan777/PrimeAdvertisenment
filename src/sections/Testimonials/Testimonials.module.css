@@ -1,0 +1,129 @@
+/* ===================================================
+   Section Layout
+   =================================================== */
+
+.section {
+  color: white;
+}
+
+.heading {
+  font-size: 3em;
+  text-align: center;
+  margin: 100px auto 50px;
+  max-width: 500px;
+}
+
+.slider {
+  position: relative;
+}
+
+/* ===================================================
+   Testimonial Card
+   =================================================== */
+
+.card {
+  color: white;
+}
+
+.card > :global(.container) {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+}
+
+.content p {
+  font-size: 1.5em;
+  line-height: 120%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.quoteMark {
+  width: 98px;
+  height: 72px;
+  background-image: url('https://assets-global.website-files.com/662cfa87c5ae0d51e509acbd/662cfa88c5ae0d51e509ad2c_comma%20icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.avatar img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.author {
+  font-size: 1.5em;
+}
+
+.quote {
+  font-style: italic;
+}
+
+/* ===================================================
+   Swiper Navigation Overrides
+   =================================================== */
+
+.section :global(.swiper-nav-btns) svg {
+  cursor: pointer;
+}
+
+/* ===================================================
+   Responsive
+   =================================================== */
+
+@media (max-width: 900px) {
+  .avatar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card > :global(.container) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content p {
+    text-align: center;
+  }
+
+  .quoteMark {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .content p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 2em;
+    max-width: 373px;
+  }
+}

@@ -1,7 +1,8 @@
 {
-  "name": "primeadverstingvite",
+  "name": "prime-advertising",
+  "description": "Marketing landing page for PrimeAdvertising — AI growth infrastructure for agencies",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,11 +12,10 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
-    "firebase": "^10.12.2",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.9.0",
-    "sass": "^1.77.4",
     "swiper": "^11.1.4"
   },
   "devDependencies": {

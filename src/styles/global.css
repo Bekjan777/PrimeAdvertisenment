@@ -1,0 +1,79 @@
+@import '../assets/fonts/fonts.css';
+
+/* ===================================================
+   Design Tokens
+   =================================================== */
+
+:root {
+  --color-primary: rgb(56, 87, 246);
+  --color-primary-hover: rgb(99, 125, 255);
+  --color-bg: #000;
+  --color-surface: #0c0f1e;
+  --color-text: #fff;
+  --color-text-muted: #b3b3c7;
+  --color-text-dim: #d9d9d9;
+  --font-heading: 'DM Sans', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-link: 'Poppins', sans-serif;
+}
+
+/* ===================================================
+   Base Styles
+   =================================================== */
+
+* {
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 43px;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-family: var(--font-link);
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+/* ===================================================
+   Layout: Container
+   =================================================== */
+
+.container {
+  padding: 0 32px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+}

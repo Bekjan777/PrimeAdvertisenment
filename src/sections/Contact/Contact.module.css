@@ -1,0 +1,196 @@
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.contact form {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.heading {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* ===================================================
+   Left Column — Form Fields
+   =================================================== */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+  align-items: center;
+}
+
+/* ===================================================
+   Right Column — Calendar + Submit
+   =================================================== */
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* ===================================================
+   Input Fields
+   =================================================== */
+
+.inputGroup {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+  width: 100%;
+}
+
+.inputGroup + .inputGroup {
+  margin-top: 1.5rem;
+}
+
+.inputGroup + .timeGroup {
+  margin-top: 1.5rem;
+}
+
+.inputLabel {
+  color: #8597a3;
+  position: absolute;
+  top: 1.5rem;
+  transition: 0.25s ease;
+}
+
+.inputField {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 1.125rem;
+  padding: 0.25rem 0;
+  color: white;
+}
+
+.inputField:focus,
+.inputField:valid {
+  outline: 0;
+  border-bottom-color: #6658d3;
+}
+
+.inputField:focus + .inputLabel,
+.inputField:valid + .inputLabel {
+  color: #6658d3;
+  transform: translateY(-1.5rem);
+}
+
+/* ===================================================
+   Time Input
+   =================================================== */
+
+.timeGroup {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.timeLabel {
+  color: #8597a3;
+  margin-left: 10px;
+  transition: 0.25s ease;
+}
+
+.timeField {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  font: inherit;
+  font-size: 1.125rem;
+  padding: 0.25rem 0;
+  color: white;
+  width: fit-content;
+}
+
+.timeField::-webkit-calendar-picker-indicator {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  transition: 0.25s ease;
+}
+
+.timeField:focus,
+.timeField:valid {
+  outline: 0;
+  border-bottom-color: #6658d3;
+}
+
+.timeField:focus::-webkit-calendar-picker-indicator,
+.timeField:valid::-webkit-calendar-picker-indicator {
+  filter: invert(39%) sepia(44%) saturate(1814%) hue-rotate(221deg) brightness(85%) contrast(94%);
+}
+
+.timeField:focus + .timeLabel,
+.timeField:valid + .timeLabel {
+  color: #6658d3;
+}
+
+/* ===================================================
+   Submit Button
+   =================================================== */
+
+.submit {
+  font: inherit;
+  font-size: 1.25rem;
+  padding: 1em;
+  width: 100%;
+  font-weight: 500;
+  background-color: var(--color-primary);
+  border-radius: 6px;
+  color: #fff;
+  border: 0;
+  margin-top: 2rem;
+  max-width: 360px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.submit:hover {
+  opacity: 0.9;
+}
+
+.submit:focus {
+  outline: 0;
+}
+
+/* ===================================================
+   Responsive
+   =================================================== */
+
+@media (max-width: 1030px) {
+  .contact form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    justify-content: center;
+  }
+
+  .inputField {
+    width: 100%;
+  }
+}

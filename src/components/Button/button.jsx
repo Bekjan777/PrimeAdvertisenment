@@ -1,7 +1,18 @@
+import PropTypes from 'prop-types';
+import styles from './Button.module.css';
 
-// eslint-disable-next-line react/prop-types
-export default function Button({children}) {
-    return(
-        <a href='#' className='button' style={{color: "white", cursor:"pointer"}} data-aos="fade-up">{children}</a>
-    )
+/**
+ * Primary call-to-action button with inner glow effect.
+ * Renders as a span to avoid nesting issues with react-scroll Link components.
+ */
+export default function Button({ children }) {
+  return (
+    <span className={styles.button} data-aos="fade-up">
+      {children}
+    </span>
+  );
 }
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+};
